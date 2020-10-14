@@ -1,7 +1,7 @@
 # Project for search job Frontend
 
 Project for search job using MERN stack.
-This is the frontend repo built with React.
+This is the frontend repo built with React. Backend repo ![this]('https://github.com/hardsmile98/job-backend')
 
 Global state management is taken care of by React Context API. For avatar uploads uses Cloudinary.
 
