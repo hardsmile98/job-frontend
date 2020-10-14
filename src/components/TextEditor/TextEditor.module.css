@@ -15,11 +15,12 @@
   background-color: #f3f3f3;
   width: 35px;
   height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   margin-right: 5px;
+}
+
+.Buttons button svg {
+  display: inline-block;
 }
 
 .Field {
