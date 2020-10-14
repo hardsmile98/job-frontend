@@ -1,0 +1,10 @@
+.Main {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .Main {
+    flex-wrap: wrap;
+  }
+}

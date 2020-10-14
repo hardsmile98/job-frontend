@@ -1,0 +1,109 @@
+.Search {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.Search h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.Form {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+}
+
+.Input {
+  position: relative;
+  width: calc(100% - 140px);
+  min-height: 50px;
+  padding: 0 30px 0 15px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #cdd0d5;
+  border-radius: 4px 0 0 4px;
+  background: #fff;
+}
+
+.Icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 7px;
+}
+
+.Close {
+  position: absolute;
+  z-index: 3;
+  right: 10px;
+  top: calc(50% - 9px);
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.Close svg:hover {
+  fill: #3495db;
+}
+
+.Input input {
+  width: 100%;
+  height: 35px;
+}
+
+.Submit {
+  cursor: pointer;
+  width: 140px;
+  height: 50px;
+  border-radius: 0 4px 4px 0;
+  color: #fff;
+  background-color: #3495db;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+}
+
+.Submit:hover {
+  background-color: #2589d1;
+}
+
+.Bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  background-color: #eff3f8;
+  width: 100%;
+  height: 150px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 480px) {
+  .Search {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .Search h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .Input {
+    width: calc(100% - 110px);
+    min-height: 45px;
+  }
+
+  .Submit {
+    width: 110px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .Bg {
+    height: 120px;
+  }
+}

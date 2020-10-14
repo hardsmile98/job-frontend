@@ -1,0 +1,82 @@
+.Add {
+  max-width: 450px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.Step {
+  padding-top: 30px;
+}
+
+.Head {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Head span {
+  position: relative;
+  margin-top: 2px;
+  color: #bebebe;
+}
+
+.Submit {
+  cursor: pointer;
+  color: #fff;
+  background-color: #3495db;
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  width: 100%;
+  padding: 0 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in;
+}
+
+.Submit:disabled {
+  cursor: not-allowed;
+  background: #8bcfff;
+}
+
+.Submit:disabled:hover {
+  background: #8bcfff;
+}
+
+.Submit:hover {
+  background-color: #2589d1;
+}
+
+@media screen and (max-width: 480px) {
+  .Add {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+
+  .Step {
+    padding-top: 15px;
+  }
+
+  .Head {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Head h2 {
+    width: 100%;
+    order: 1;
+    font-size: 16px;
+  }
+
+  .Head span {
+    margin-top: 0;
+    order: 0;
+    width: 100%;
+  }
+
+  .Submit {
+    font-size: 14px;
+    height: 36px;
+  }
+}

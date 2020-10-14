@@ -1,0 +1,28 @@
+.Saved {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 600;
+  background: transparent;
+  color: #3495db;
+}
+
+.Saved svg {
+  margin-right: 3px;
+}
+
+@media screen and (max-width: 480px) {
+  .Saved {
+    font-size: 12px;
+  }
+
+  .Saved span {
+    display: none;
+  }
+
+  .Saved svg {
+    margin-right: 0px;
+  }
+}

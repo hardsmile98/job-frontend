@@ -1,0 +1,32 @@
+.Input {
+  margin-bottom: 20px;
+}
+
+.Input p {
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.Input p span {
+  font-weight: 700;
+  color: #ff162e;
+}
+
+.Input input {
+  height: 34px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #cdd0d5;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+
+.Input input:focus {
+  border: 1px solid #3495db;
+}
+
+@media screen and (max-width: 480px) {
+  .Input {
+    margin-bottom: 12px;
+  }
+}

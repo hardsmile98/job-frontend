@@ -1,0 +1,107 @@
+.ProfileSettings {
+  padding: 15px;
+  border: 1px solid #ebedf0;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.Wrap {
+  margin-top: 30px;
+  display: flex;
+}
+
+.Avatar {
+  width: 25%;
+}
+
+.Avatar img {
+  display: inline-block;
+  background: #3495db;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.Change {
+  margin-top: 8px;
+  text-align: center;
+  width: 140px;
+}
+
+.Change label {
+  cursor: pointer;
+  transition: 0.3s color ease;
+}
+
+.Change label:hover {
+  color: #3495db;
+}
+
+.Change input {
+  display: none;
+  opacity: 0;
+}
+
+.Info {
+  width: 75%;
+}
+
+.Submit {
+  cursor: pointer;
+  color: #fff;
+  background-color: #3495db;
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  min-width: 120px;
+  padding: 0 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in;
+}
+
+.Submit:disabled {
+  cursor: not-allowed;
+  background: #8bcfff;
+}
+
+.Submit:disabled:hover {
+  background: #8bcfff;
+}
+
+.Submit:hover {
+  background-color: #2589d1;
+}
+
+@media screen and (max-width: 768px) {
+  .Wrap {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Avatar {
+    width: 100%;
+  }
+
+  .Info {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Avatar {
+    text-align: center;
+  }
+  .Change {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .Submit {
+    font-size: 14px;
+    height: 36px;
+    padding: 0 12px;
+  }
+}

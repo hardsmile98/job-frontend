@@ -1,0 +1,97 @@
+.Auth {
+  max-width: 450px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.Form {
+  padding-top: 20px;
+}
+
+.Error {
+  color: #ff162e;
+  margin-bottom: 10px;
+}
+
+.Submit {
+  cursor: pointer;
+  color: #fff;
+  background-color: #3495db;
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  min-width: 120px;
+  padding: 0 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in;
+}
+
+.Submit:disabled {
+  cursor: not-allowed;
+  background: #8bcfff;
+}
+
+.Submit:disabled:hover {
+  background: #8bcfff;
+}
+
+.Submit:hover {
+  background-color: #2589d1;
+}
+
+.Policy {
+  padding: 10px 0;
+  color: #999;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.Divider {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #ebedf0;
+  margin: 15px 0;
+  position: relative;
+}
+
+.Divider div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -1px;
+  color: #999;
+  background-color: #fff;
+  padding: 0 8px;
+}
+
+.Create {
+  color: #999;
+}
+
+.Link {
+  font-weight: 500;
+  margin-left: 10px;
+  color: #3495db;
+}
+
+.Link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .Auth {
+    padding-top: 40px;
+  }
+
+  .Form {
+    padding-top: 15px;
+  }
+
+  .Submit {
+    font-size: 14px;
+    height: 36px;
+    padding: 0 12px;
+  }
+}

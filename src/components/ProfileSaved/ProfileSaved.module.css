@@ -1,0 +1,33 @@
+.ProfileSaved {
+  padding: 15px;
+  border: 1px solid #ebedf0;
+  border-radius: 4px;
+}
+
+.Empty {
+  margin-top: 5px;
+  color: #9097a3;
+}
+
+.Saves {
+  margin-top: 15px;
+}
+
+.Save {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  border: 1px solid #ebedf0;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.Save a {
+  transition: 0.3s color ease;
+  padding-right: 10px;
+}
+
+.Save a:hover {
+  color: #3495db;
+}

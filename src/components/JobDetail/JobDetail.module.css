@@ -1,0 +1,208 @@
+.JobDetail {
+  max-width: 950px;
+  flex-basis: 950px;
+  flex-shrink: 1;
+  margin-right: 40px;
+}
+
+.Wrap {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ebedf0;
+  border-radius: 4px;
+}
+
+.Head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.Salary {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 12px 0;
+}
+
+.Table {
+  color: #9097a3;
+}
+
+.Line {
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: row;
+}
+
+.Label {
+  padding-right: 5px;
+  min-width: 110px;
+}
+
+.Company {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  max-width: 150px;
+  margin-left: 20px;
+  color: #3495db;
+  text-align: right;
+}
+
+.Bold {
+  font-weight: 700;
+}
+
+.Description {
+  margin-top: 15px;
+}
+
+.Place {
+  line-height: 22px;
+  margin-top: 10px;
+}
+
+.PlaceVal svg {
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+  fill: #081935;
+}
+
+.Date {
+  margin-top: 5px;
+  color: #9097a3;
+}
+
+.Actions {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ebedf0;
+  border-radius: 4px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Buttons {
+  display: flex;
+  align-items: center;
+}
+
+.Respond {
+  margin-right: 15px;
+  font-weight: 600;
+  border: 1px solid #3495db;
+  color: #3495db;
+  background: transparent;
+  height: 34px;
+  padding: 0 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s all ease-in;
+}
+
+.Respond:hover {
+  background-color: rgba(52, 149, 219, 0.1);
+}
+
+.Call {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 600;
+  background: transparent;
+  color: #3495db;
+}
+
+.Call svg {
+  margin-right: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .JobDetail {
+    max-width: 100%;
+    flex-basis: 100%;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Head {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .About {
+    width: 100%;
+  }
+
+  .Salary {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 5px 0 10px 0;
+  }
+
+  .Table {
+    font-size: 12px;
+    line-height: 18px;
+    color: #081935;
+  }
+
+  .Line {
+    justify-content: space-between;
+  }
+
+  .Label {
+    padding-right: 5px;
+    min-width: 110px;
+    color: #9097a3;
+  }
+
+  .Company {
+    margin-top: 5px;
+    align-items: flex-start;
+    max-width: 100%;
+    line-height: 22px;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .Place {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .PlaceVal svg {
+    top: 3px;
+    margin-right: 3px;
+  }
+
+  .Date {
+    font-size: 12px;
+  }
+
+  .Actions {
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+
+  .Buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  .Respond {
+    height: 30px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+  .Call {
+    font-size: 12px;
+  }
+}

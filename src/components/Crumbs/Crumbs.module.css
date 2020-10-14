@@ -1,0 +1,17 @@
+.CrumbsWrap {
+  padding: 8px 0;
+}
+
+.Crumbs {
+  color: #9097a3;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Crumbs li {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}

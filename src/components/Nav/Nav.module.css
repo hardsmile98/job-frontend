@@ -1,0 +1,109 @@
+.Nav {
+  background: #3495db;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  z-index: 10;
+}
+
+.Wrap {
+  height: 100%;
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Info {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.City {
+  margin-right: 30px;
+}
+
+.Profile {
+  position: relative;
+}
+
+.Link {
+  display: block;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.Menu {
+  min-width: 110px;
+  top: 30px;
+  right: 0;
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  z-index: 11;
+  color: #081935;
+  font-size: 13px;
+  font-weight: 400;
+  animation: opacity 0.5s ease;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Menu ul li a {
+  display: flex;
+  height: 34px;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.Menu ul li a:hover {
+  background: #ebf4fb;
+}
+
+.Button {
+  background-color: #fff;
+  color: #081935;
+  height: 32px;
+  min-width: 90px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.Button:hover {
+  color: #050f1f;
+  background-color: #f2f2f2;
+  transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width: 480px) {
+  .Logo {
+    width: 75px;
+    height: 17px;
+  }
+  .Logo a svg {
+    width: 100%;
+    height: 100%;
+  }
+}
