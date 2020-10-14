@@ -13,12 +13,12 @@
   border-radius: 4px;
   border: 1px solid #cdd0d5;
   background-color: #f3f3f3;
-  display: block;
   width: 35px;
   height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin-right: 5px;
 }
 
