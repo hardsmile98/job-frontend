@@ -20,7 +20,6 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "https://intense-temple-11712.herokuapp.com",
   "browserslist": {
     "production": [
       ">0.2%",
