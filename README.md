@@ -3,7 +3,7 @@
 Project for search job using MERN stack.
 This is the frontend repo built with React.
 
-Global state management is taken care of by React Context API. For image uploads, instaclone uses Cloudinary.
+Global state management is taken care of by React Context API. For avatar uploads uses Cloudinary.
 
 ## Running Locally
 
