@@ -8,7 +8,7 @@ Global state management is taken care of by React Context API. For avatar upload
 
 ## Running Locally
 
-Then run <code>npm i && npm run start</code> to see the instaclone in action
+Then run <code>npm i and npm run start</code>
 
 ## UI
 
