@@ -6,9 +6,11 @@ import Loader from '../../components/Loader/Loader'
 import Crumbs from '../../components/Crumbs/Crumbs'
 import JobDetail from '../../components/JobDetail/JobDetail'
 import Recommends from '../../components/Recommends/Recommends'
+import Placeholder from '../../components/Placeholder/Placeholder'
 
 const Detail = () => {
   const [loading, setLoading] = useState(true)
+  const [dead, setDead] = useState(false)
   const [detail, setDetail] = useState(null)
   const [recommends, setRecommends] = useState(null)
   const { id } = useParams()
@@ -19,7 +21,9 @@ const Detail = () => {
       const data = await request(`/api/job/${id}`, 'GET', null)
       setDetail(data.detail)
       setRecommends(data.recommends)
-    } catch (e) {}
+    } catch (e) {
+      setDead(true)
+    }
     setLoading(false)
   }, [request, id])
 
@@ -33,11 +37,20 @@ const Detail = () => {
 
   return (
     <div className={classes.Detail}>
-      <Crumbs currentLink={detail.job} />
-      <div className={classes.Main}>
-        <JobDetail detail={detail} />
-        <Recommends recommends={recommends} />
-      </div>
+      {dead ? (
+        <Placeholder
+          title="Страница вакансии не найдена"
+          desc="Попробуйте попозже или поменяйте свой запрос"
+        />
+      ) : (
+        <>
+          <Crumbs currentLink={detail.job} />
+          <div className={classes.Main}>
+            <JobDetail detail={detail} />
+            <Recommends recommends={recommends} /> )
+          </div>
+        </>
+      )}
     </div>
   )
 }
