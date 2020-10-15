@@ -47,7 +47,7 @@ const Detail = () => {
           <Crumbs currentLink={detail.job} />
           <div className={classes.Main}>
             <JobDetail detail={detail} />
-            <Recommends recommends={recommends} /> )
+            <Recommends recommends={recommends} />
           </div>
         </>
       )}
